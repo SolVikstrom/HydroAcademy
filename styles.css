@@ -427,7 +427,7 @@ body:not(.is-logged-in) .btn-account {
   border: 1px solid var(--line);
   padding: 0.55rem;
   margin: 0.35rem 0 0.5rem;
-  min-height: 10rem;
+  min-height: 6.5rem;
   flex: 1;
 }
 
@@ -542,7 +542,7 @@ body:not(.is-logged-in) .btn-account {
 }
 
 .grid-video-chat {
-  grid-template-columns: 1.85fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
 }
 
@@ -694,19 +694,15 @@ body:not(.is-logged-in) .btn-account {
 }
 
 .media-block-video {
-  height: auto;
-  aspect-ratio: 16 / 9;
-  min-height: 14rem;
+  height: 10.5rem;
+  aspect-ratio: auto;
+  min-height: 0;
   background: #111;
 }
 
 .panel-model {
   display: flex;
   flex-direction: column;
-}
-
-.panel-model .media-block-video {
-  flex: 1;
 }
 
 .list-rows {
