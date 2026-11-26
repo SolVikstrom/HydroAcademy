@@ -19,10 +19,10 @@ Knappen **Logga in (demo)** sätter `localStorage` och låser upp Lär & använd
 | Sida | Fil | Tillgång |
 |------|-----|----------|
 | Upptäck | `index.html` | Öppen |
+| Praktiska case | `praktiken.html` | Öppen |
 | Lär & använd | `lar.html` | Inloggad |
 | Sales Academy | `sales.html` | Inloggad |
 | Community | `community.html` | Inloggad |
-| Praktiska case | `praktiken.html` | Öppen |
 
 ## GitHub Pages
 
