@@ -362,6 +362,85 @@ body:not(.is-logged-in) .btn-account {
   }
 }
 
+/* —— Hydro Companion CTA —— */
+.companion-strip {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  background: var(--black);
+  color: #fff;
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 0.65rem;
+  border-top: 2px solid var(--accent);
+}
+
+.companion-strip-phone {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  background: #1a1a1a;
+}
+
+.companion-strip h2 {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.companion-strip .hint {
+  color: #bdbdbd;
+  margin-top: 0.15rem;
+}
+
+.companion-strip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .companion-strip {
+    grid-template-columns: auto 1fr;
+  }
+
+  .companion-strip-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
+
+.companion-panel {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.companion-panel-copy .capability {
+  margin-top: 0.5rem;
+}
+
+.companion-phone {
+  justify-self: center;
+  max-height: 11rem;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .companion-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .companion-phone {
+    max-height: 9rem;
+  }
+}
+
 .placeholder-label {
   display: block;
   font-family: var(--mono);
