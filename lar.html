@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lär &amp; använd — HYDRO Academy (konceptunderlag)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blueprint-banner">
+    <strong>Konceptunderlag · designsprint</strong>
+    <span>Inte en färdig tjänst — visar funktioner och struktur för vidare utveckling.</span>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">Conjet</span>
+        <span class="brand-sep">|</span>
+        <span class="brand-sub">Hydro Academy</span>
+      </div>
+      <nav class="nav" aria-label="Huvuddelar">
+        <a href="index.html">Upptäck</a>
+        <a href="lar.html" class="is-active">Lär &amp; använd <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="sales.html">Sales Academy <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="community.html">Community <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="praktiken.html">I praktiken</a>
+      </nav>
+      <div class="top-actions">
+        <select class="lang" aria-label="Språk (placeholder)">
+          <option>Svenska</option>
+          <option>English</option>
+        </select>
+        <span class="auth-state" data-auth-label>Ej inloggad</span>
+        <button type="button" class="btn btn-accent btn-login" data-login>Logga in (demo)</button>
+        <button type="button" class="btn btn-account" disabled>Mitt konto</button>
+        <button type="button" class="btn btn-ghost btn-logout" data-logout>Logga ut</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <h1>2. Lär &amp; använd</h1>
+      <p>Stängd del — kurser, maskinstöd, simulator, AI i manualer</p>
+    </div>
+
+    <div class="meta-row">
+      <span class="chip chip-locked">Tillgång: inloggad (TEAM Conjet)</span>
+      <span class="chip">Mål: från kunskap → praktisk tillämpning</span>
+      <span class="chip">Roller: säljare · operatör</span>
+    </div>
+
+    <div class="gated">
+      <div class="gate-note">
+        <div class="gate-card">
+          <span class="placeholder-label">[[ Gate ]]</span>
+          <p>Denna del ligger bakom nyckel. I prototypen: klicka <strong>Logga in (demo)</strong> för att se inloggat läge.</p>
+          <button type="button" class="btn btn-accent" data-login>Öppna demo-inloggning →</button>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="panel">
+          <span class="placeholder-label">[[ Fortsätt kurs ]]</span>
+          <h2>Continue learning</h2>
+          <div class="tile-media" style="height:5rem">[bild: maskin / kurs]</div>
+          <p class="hint">Här: aktiv kurs, t.ex. “Robot [modell] — Setup and operation”. Progress och CTA att fortsätta.</p>
+          <div class="progress" aria-hidden="true"><span></span></div>
+          <p class="hint">3 av 6 lektioner (placeholder)</p>
+          <button type="button" class="btn btn-accent" style="margin-top:0.4rem">Fortsätt kurs →</button>
+        </div>
+        <div class="stack">
+          <div class="panel panel-dark">
+            <span class="placeholder-label">[[ Maskinstöd på plats ]]</span>
+            <h3>Support för din maskin</h3>
+            <p class="hint">Här: välj modell → startup guide · felsökning · manuals &amp; specs. Ska kunna nås ute på arbetsplatsen (maskinkoppling).</p>
+            <select class="lang" style="width:100%;margin:0.4rem 0;background:#3a3a36;color:#eee;border-color:#555">
+              <option>Robot [modell] (placeholder)</option>
+            </select>
+            <div class="stack">
+              <span class="btn btn-sm">Startup guide →</span>
+              <span class="btn btn-sm">Felsökningsguide →</span>
+              <span class="btn btn-sm">Manualer &amp; spec →</span>
+            </div>
+          </div>
+          <div class="panel">
+            <span class="placeholder-label">[[ Conjet AI ]]</span>
+            <h3>Ask Conjet AI</h3>
+            <p class="hint">Här: frågor mot godkända manualer och kunskapsunderlag.</p>
+            <div class="search" style="margin:0.4rem 0 0.5rem">
+              <span class="search-icon">⌕</span>
+              <input type="search" placeholder="Här: skriv en teknisk fråga…" readonly>
+            </div>
+            <button type="button" class="btn btn-accent">Ställ fråga →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:0.55rem">
+        <div class="tile">
+          <div class="tile-media">[360° / 3D]</div>
+          <div class="tile-title">Virtuell demo</div>
+          <div class="tile-desc">Här: digital demonstration / interaktiv modell per produktlinje.</div>
+          <span class="tile-link">Utforska modell →</span>
+        </div>
+        <div class="tile">
+          <div class="tile-media">[simulator]</div>
+          <div class="tile-title">Körsimulator</div>
+          <div class="tile-desc">Här: gamification, banor, svårighetsgrad, virtuellt “körkort” efter godkända körningar. Omfattning/utfärdare: precisera.</div>
+          <span class="tile-link">Starta övning →</span>
+        </div>
+        <div class="tile">
+          <div class="tile-media">[digital tvilling]</div>
+          <div class="tile-title">Digital tvilling</div>
+          <div class="tile-desc">Här: plats i IA. Begreppet behöver preciseras (utbildningsmodell vs maskinens driftdata).</div>
+          <span class="tile-link">Öppna (placeholder) →</span>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:0.55rem">
+        <span class="placeholder-label">[[ Learning path ]]</span>
+        <h2>Din lärväg</h2>
+        <div class="path-steps">
+          <span class="path-step"><span class="dot done"></span> Produktgrunder</span>
+          <span class="path-step"><span class="dot now"></span> Setup &amp; drift</span>
+          <span class="path-step"><span class="dot"></span> Övning &amp; bedömning</span>
+          <button type="button" class="btn btn-sm" style="margin-left:auto">Visa utbildningsbevis →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="values">
+      <span>Hållbarhet</span>
+      <span>Pålitlighet</span>
+      <span>Säkerhet</span>
+      <span>Trygghet</span>
+    </div>
+  </main>
+
+  <p class="footer-note">HYDRO Academy · blueprint v0 · Del 2/5 stängd · Fake login via localStorage</p>
+
+  <div class="modal-backdrop" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="modal">
+      <span class="placeholder-label">[[ Fake inloggning — ingen riktig auth ]]</span>
+      <h2 id="login-title">Logga in (demo)</h2>
+      <p class="hint">Simulerar TEAM Conjet-access för stängda delar.</p>
+      <form id="login-form">
+        <label for="login-name">Visningsnamn i prototypen</label>
+        <input id="login-name" type="text" placeholder="t.ex. Operatör / Säljare" autocomplete="off">
+        <div class="actions">
+          <button type="button" class="btn" data-close-modal>Avbryt</button>
+          <button type="submit" class="btn btn-accent">Logga in →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

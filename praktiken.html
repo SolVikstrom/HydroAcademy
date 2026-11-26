@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I praktiken — HYDRO Academy (konceptunderlag)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blueprint-banner">
+    <strong>Konceptunderlag · designsprint</strong>
+    <span>Inte en färdig tjänst — visar funktioner och struktur för vidare utveckling.</span>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">Conjet</span>
+        <span class="brand-sep">|</span>
+        <span class="brand-sub">Hydro Academy</span>
+      </div>
+      <nav class="nav" aria-label="Huvuddelar">
+        <a href="index.html">Upptäck</a>
+        <a href="lar.html">Lär &amp; använd <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="sales.html">Sales Academy <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="community.html">Community <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="praktiken.html" class="is-active">I praktiken</a>
+      </nav>
+      <div class="top-actions">
+        <select class="lang" aria-label="Språk (placeholder)">
+          <option>Svenska</option>
+          <option>English</option>
+        </select>
+        <span class="auth-state" data-auth-label>Ej inloggad</span>
+        <button type="button" class="btn btn-accent btn-login" data-login>Logga in (demo)</button>
+        <button type="button" class="btn btn-account" disabled>Mitt konto</button>
+        <button type="button" class="btn btn-ghost btn-logout" data-logout>Logga ut</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <h1>5. Conjet i praktiken</h1>
+      <p>Öppen referensbank — case, citat, bilder, artiklar (SEO/AI-vänligt)</p>
+    </div>
+
+    <div class="meta-row">
+      <span class="chip chip-open">Tillgång: öppen</span>
+      <span class="chip">Kopplad till Community</span>
+      <span class="chip">WJTA / EWJI · Supercases / vardagsjobb</span>
+    </div>
+
+    <div class="journey">
+      <strong>Del av prototypresan</strong>
+      <p>Här hittar distributören ett relevant case → går vidare till produkter i <a href="index.html">Upptäck</a> → sedan <a href="lar.html">Lär &amp; använd</a> (demo-login) för kort utbildningsmoment.</p>
+    </div>
+
+    <div class="search">
+      <span class="search-icon">⌕</span>
+      <input type="search" placeholder="Här: sök case, metod, typ av jobb, land…" readonly>
+    </div>
+
+    <div class="tabs">
+      <span class="tab is-on">Alla</span>
+      <span class="tab">Supercases</span>
+      <span class="tab">Vardagsjobb</span>
+      <span class="tab">Testimonials</span>
+      <span class="tab">Artiklar WJTA/EWJI</span>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="tile">
+        <div class="tile-media">[case-bild]</div>
+        <div class="tile-title">Supercase (placeholder)</div>
+        <div class="tile-desc">Här: stort referensprojekt — förutsättningar, lösning, dokumenterat resultat.</div>
+        <span class="tile-link">Öppna case →</span>
+      </div>
+      <div class="tile">
+        <div class="tile-media">[case-bild]</div>
+        <div class="tile-title">Vardagsjobb (placeholder)</div>
+        <div class="tile-desc">Här: “Vi tänkte handbilning… men upptäckte Conjet” — metodval och utrustning.</div>
+        <span class="tile-link">Öppna case →</span>
+      </div>
+      <div class="tile">
+        <div class="tile-media">[citat]</div>
+        <div class="tile-title">Testimonial (placeholder)</div>
+        <div class="tile-desc">Här: citat, personer, bilder från utförda jobb och positiva erfarenheter.</div>
+        <span class="tile-link">Läs mer →</span>
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:0.55rem">
+      <div class="panel">
+        <span class="placeholder-label">[[ Publiceringar ]]</span>
+        <h2>Branschpubliceringar</h2>
+        <p class="hint">Här: länkar till artiklar i WJTA (WaterJet Technology Association) och EWJI (European Water Jetting Institute).</p>
+        <div class="row" style="margin-top:0.4rem">
+          <span class="chip">WJTA (placeholder)</span>
+          <span class="chip">EWJI (placeholder)</span>
+        </div>
+      </div>
+      <div class="panel">
+        <span class="placeholder-label">[[ SEO / AI-inläsning ]]</span>
+        <h2>Sökbarhet</h2>
+        <p class="hint">Här: strukturerat, sökbart innehåll anpassat för sökmotorer och AI-tjänster — lätt att hitta och tolka.</p>
+      </div>
+    </div>
+
+    <div class="values">
+      <span>Hållbarhet</span>
+      <span>Pålitlighet</span>
+      <span>Säkerhet</span>
+      <span>Trygghet</span>
+    </div>
+  </main>
+
+  <p class="footer-note">HYDRO Academy · blueprint v0 · Del 5/5 öppen · Fake login via localStorage</p>
+
+  <div class="modal-backdrop" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="modal">
+      <span class="placeholder-label">[[ Fake inloggning — ingen riktig auth ]]</span>
+      <h2 id="login-title">Logga in (demo)</h2>
+      <p class="hint">Behövs för stängda delar — denna sida är öppen.</p>
+      <form id="login-form">
+        <label for="login-name">Visningsnamn i prototypen</label>
+        <input id="login-name" type="text" placeholder="t.ex. Distributör" autocomplete="off">
+        <div class="actions">
+          <button type="button" class="btn" data-close-modal>Avbryt</button>
+          <button type="submit" class="btn btn-accent">Logga in →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

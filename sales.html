@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Academy — HYDRO Academy (konceptunderlag)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blueprint-banner">
+    <strong>Konceptunderlag · designsprint</strong>
+    <span>Inte en färdig tjänst — visar funktioner och struktur för vidare utveckling.</span>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">Conjet</span>
+        <span class="brand-sep">|</span>
+        <span class="brand-sub">Hydro Academy</span>
+      </div>
+      <nav class="nav" aria-label="Huvuddelar">
+        <a href="index.html">Upptäck</a>
+        <a href="lar.html">Lär &amp; använd <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="sales.html" class="is-active">Sales Academy <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="community.html">Community <span class="lock" aria-hidden="true">🔒</span></a>
+        <a href="praktiken.html">I praktiken</a>
+      </nav>
+      <div class="top-actions">
+        <select class="lang" aria-label="Språk (placeholder)">
+          <option>Svenska</option>
+          <option>English</option>
+        </select>
+        <span class="auth-state" data-auth-label>Ej inloggad</span>
+        <button type="button" class="btn btn-accent btn-login" data-login>Logga in (demo)</button>
+        <button type="button" class="btn btn-account" disabled>Mitt konto</button>
+        <button type="button" class="btn btn-ghost btn-logout" data-logout>Logga ut</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <h1>3. HYDRO Sales Academy</h1>
+      <p>Stängd del för säljteam — träning, belöningar, samhörighet</p>
+    </div>
+
+    <div class="meta-row">
+      <span class="chip chip-locked">Tillgång: inloggad säljteam</span>
+      <span class="chip">Mål: trygghet + motivation</span>
+      <span class="chip">Nationellt / World Sales Award</span>
+    </div>
+
+    <div class="gated">
+      <div class="gate-note">
+        <div class="gate-card">
+          <span class="placeholder-label">[[ Gate ]]</span>
+          <p>Sales Academy kräver TEAM Conjet. Använd demo-inloggning för att se layouten.</p>
+          <button type="button" class="btn btn-accent" data-login>Öppna demo-inloggning →</button>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="panel">
+          <span class="placeholder-label">[[ Awards ]]</span>
+          <div class="tile-media" style="height:7rem">[bild: säljteam / award]</div>
+          <h2>Recognising sales excellence</h2>
+          <p class="hint">Här: National Sales Award per land + World Sales Award. Belöning: kontant / resa / internationellt utbyte. Kriterier ska även fungera på mindre och nya marknader.</p>
+          <button type="button" class="btn btn-accent" style="margin-top:0.4rem">Utforska utmärkelser →</button>
+        </div>
+        <div class="panel panel-dark">
+          <span class="placeholder-label">[[ Rewards ]]</span>
+          <h3>Rewards &amp; utbyten</h3>
+          <p class="hint">Här: lista över motivationshöjande insatser.</p>
+          <div class="stack" style="margin-top:0.45rem">
+            <div class="list-row" style="background:#3a3a36;border-color:#4a4a44;color:#eee"><span>•</span><span>Kontanta belöningar</span><span>→</span></div>
+            <div class="list-row" style="background:#3a3a36;border-color:#4a4a44;color:#eee"><span>•</span><span>Internationella besök</span><span>→</span></div>
+            <div class="list-row" style="background:#3a3a36;border-color:#4a4a44;color:#eee"><span>•</span><span>TEAM Conjet-event</span><span>→</span></div>
+          </div>
+          <button type="button" class="btn btn-accent" style="margin-top:0.55rem;width:100%">Discover rewards →</button>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:0.55rem">
+        <div class="tile">
+          <div class="tile-media">[story]</div>
+          <div class="tile-title">Hydro Academy Stories</div>
+          <div class="tile-desc">Här: dokumenterade kundcase från fältet. Bästa story kan belönas.</div>
+          <span class="tile-link">Skicka in story →</span>
+        </div>
+        <div class="tile">
+          <div class="tile-media">[foto]</div>
+          <div class="tile-title">Best Conjet Picture</div>
+          <div class="tile-desc">Här: bilder/applikationer skickas till HQ för engagemang och varumärke.</div>
+          <span class="tile-link">Ladda upp bild →</span>
+        </div>
+        <div class="tile">
+          <div class="tile-media">[fråga]</div>
+          <div class="tile-title">Crazy Question Award</div>
+          <div class="tile-desc">Här: tekniskt svåra frågor — belöning för mest korrekta/underbyggda svar.</div>
+          <span class="tile-link">Ta utmaningen →</span>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:0.55rem">
+        <span class="placeholder-label">[[ Sales toolkit ]]</span>
+        <h2>Your sales toolkit</h2>
+        <p class="hint">Här: snabbvägar för behovsanalys, produktval, värdeargument och lärväg — underlag till kunddialog.</p>
+        <div class="row" style="margin-top:0.45rem">
+          <span class="chip">Kundbehov</span>
+          <span class="chip">Produktval</span>
+          <span class="chip">Värdeargument</span>
+          <span class="btn btn-sm">Visa lärväg →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="values">
+      <span>Hållbarhet</span>
+      <span>Pålitlighet</span>
+      <span>Säkerhet</span>
+      <span>Trygghet</span>
+    </div>
+  </main>
+
+  <p class="footer-note">HYDRO Academy · blueprint v0 · Del 3/5 stängd · Fake login via localStorage</p>
+
+  <div class="modal-backdrop" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="modal">
+      <span class="placeholder-label">[[ Fake inloggning — ingen riktig auth ]]</span>
+      <h2 id="login-title">Logga in (demo)</h2>
+      <p class="hint">Simulerar säljaccess till Sales Academy.</p>
+      <form id="login-form">
+        <label for="login-name">Visningsnamn i prototypen</label>
+        <input id="login-name" type="text" placeholder="t.ex. Säljare SE" autocomplete="off">
+        <div class="actions">
+          <button type="button" class="btn" data-close-modal>Avbryt</button>
+          <button type="submit" class="btn btn-accent">Logga in →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
