@@ -127,48 +127,30 @@
           <span class="btn btn-sm btn-accent">Öppna konfigurator</span>
         </div>
       </div>
-      <div class="panel" id="companion-panel">
+      <div class="panel panel-chat" id="companion-panel">
         <span class="placeholder-label">[[ Hydro Companion ]]</span>
-        <div class="companion-panel">
-          <div class="companion-panel-copy">
-            <h2>Hydro Companion</h2>
-            <p class="hint">Här: digital verktygslåda med AI-stöd — vidareutvecklas som fältets ständiga hjälp.</p>
-            <div class="stack capability">
-              <div class="list-row"><span class="tag">Plan</span><span>Här: produktions- och kostnadsberäkning</span><span>→</span></div>
-              <div class="list-row"><span class="tag">AI</span><span>Här: TechGuide mot godkända manualer</span><span>→</span></div>
-              <div class="list-row"><span class="tag">Ops</span><span>Här: maskin-/projektstöd på plats</span><span>→</span></div>
-            </div>
-            <div class="row" style="margin-top:0.55rem">
-              <a class="btn btn-sm btn-accent" href="https://www.conjet.com/hydro-companion-app/" target="_blank" rel="noopener">Ladda ner app →</a>
-              <span class="btn btn-sm">Öppna chat (placeholder)</span>
-            </div>
-          </div>
-          <img class="companion-phone" src="images/app.webp" alt="Hydro Companion mobilapp">
+        <h2>Hydro Companion</h2>
+        <div class="chat-window" aria-hidden="true">
+          <div class="chat-bubble chat-bot">Här kan AI svara utifrån godkända manualer och fältdata.</div>
+          <div class="chat-bubble chat-user">Exempel: Vad kostar ett brodäck-jobb?</div>
         </div>
+        <div class="chat-input">
+          <input type="text" readonly placeholder="Fråga om kostnadsberäkning, maskiner eller utförande…">
+          <span class="btn btn-sm btn-accent">Skicka</span>
+        </div>
+        <a class="chat-download" href="https://www.conjet.com/hydro-companion-app/" target="_blank" rel="noopener">Ladda ner app →</a>
       </div>
     </div>
 
-    <div class="grid grid-2" style="margin-top:0.55rem">
-      <div class="panel" id="hallbarhet">
-        <span class="placeholder-label">[[ Hållbarhet ]]</span>
-        <h2>Hållbarhet &amp; metodjämförelse</h2>
-        <p class="hint">Här: hur SDG påverkas positivt av vattenbilning vs vanlig bilning — klimatpåverkan och vad du “sparat”.</p>
-        <div class="row" style="margin-top:0.45rem">
-          <span class="chip">SDG</span>
-          <span class="chip">Vs bilning</span>
-          <span class="chip">Klimatpåverkan</span>
-        </div>
-      </div>
-      <div class="panel" id="forskning">
-        <span class="placeholder-label">[[ Forskning / event / policy ]]</span>
-        <h2>Forskning, white papers &amp; event</h2>
-        <p class="hint">Här: white papers, exjobb (3:e part), mässor/föredrag och underlag för policy/upphandling.</p>
-        <div class="row" style="margin-top:0.45rem">
-          <span class="chip">White paper</span>
-          <span class="chip">Exjobb / artiklar</span>
-          <span class="chip">Event / news</span>
-          <span class="chip">Policy / upphandling</span>
-        </div>
+    <div class="panel" id="forskning" style="margin-top:0.55rem">
+      <span class="placeholder-label">[[ Forskning / event / policy ]]</span>
+      <h2>Forskning, white papers &amp; event</h2>
+      <p class="hint">Här: white papers, exjobb (3:e part), mässor/föredrag och underlag för policy/upphandling.</p>
+      <div class="row" style="margin-top:0.45rem">
+        <span class="chip">White paper</span>
+        <span class="chip">Exjobb / artiklar</span>
+        <span class="chip">Event / news</span>
+        <span class="chip">Policy / upphandling</span>
       </div>
     </div>
 
