@@ -22,7 +22,7 @@ Knappen **Logga in (demo)** sätter `localStorage` och låser upp Lär & använd
 | Lär & använd | `lar.html` | Inloggad |
 | Sales Academy | `sales.html` | Inloggad |
 | Community | `community.html` | Inloggad |
-| I praktiken | `praktiken.html` | Öppen |
+| Praktiska case | `praktiken.html` | Öppen |
 
 ## GitHub Pages
 
