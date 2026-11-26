@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upptäck — HYDRO Academy (konceptunderlag)</title>
+  <title>Upptäck — HYDRO Academy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="blueprint-banner">
-    <strong>Konceptunderlag · designsprint</strong>
-    <span>Inte en färdig tjänst — visar funktioner och struktur för vidare utveckling.</span>
+    <strong>Konceptprototyp</strong>
+    Placeholder-innehåll · bilder från conjet.com
   </div>
 
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="brand">
-        <span class="brand-mark">Conjet</span>
-        <span class="brand-sep">|</span>
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Conjet">
+        <span class="brand-sep" aria-hidden="true"></span>
         <span class="brand-sub">Hydro Academy</span>
-      </div>
+      </a>
       <nav class="nav" aria-label="Huvuddelar">
         <a href="index.html" class="is-active">Upptäck</a>
         <a href="lar.html">Lär &amp; använd <span class="lock" aria-hidden="true">🔒</span></a>
@@ -30,7 +30,7 @@
         <a href="praktiken.html">I praktiken</a>
       </nav>
       <div class="top-actions">
-        <select class="lang" aria-label="Språk (placeholder)">
+        <select class="lang" aria-label="Språk">
           <option>Svenska</option>
           <option>English</option>
           <option>Deutsch</option>
@@ -40,8 +40,8 @@
           <option>العربية</option>
         </select>
         <span class="auth-state" data-auth-label>Ej inloggad</span>
-        <button type="button" class="btn btn-accent btn-login" data-login>Logga in (demo)</button>
-        <button type="button" class="btn btn-account" disabled>Mitt konto</button>
+        <button type="button" class="btn btn-accent btn-login" data-login>Logga in</button>
+        <button type="button" class="btn btn-accent btn-account" disabled>Mitt konto</button>
         <button type="button" class="btn btn-ghost btn-logout" data-logout>Logga ut</button>
       </div>
     </div>
@@ -49,96 +49,102 @@
 
   <main class="page">
     <div class="page-head">
-      <h1>1. Upptäck HYDRO Academy</h1>
-      <p>Öppen del — inkastare till kunskap, produkter och TEAM Conjet</p>
+      <h1>Upptäck HYDRO Academy</h1>
     </div>
 
-    <div class="meta-row">
-      <span class="chip chip-open">Tillgång: öppen</span>
-      <span class="chip">Mål: väcka intresse + vägleda vidare</span>
-      <span class="chip">Primär målgrupp: sälj / distributör / nyfiken aktör</span>
-    </div>
-
-    <div class="journey">
-      <strong>Prototypresa (testa gärna)</strong>
-      <p>Distributör får kundfråga → hittar case i <a href="praktiken.html">I praktiken</a> → jämför produkter här → går till <a href="lar.html">Lär &amp; använd</a> (kräver demo-inloggning) → tar fram underlag för kunddialog.</p>
-    </div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">[[ Intro ]]</p>
+        <h2>Här kan det finnas ingress om hydrodemolition och varför kunskap skapar trygghet</h2>
+        <p class="hint">Funktioner: applikationsbank · produktöversikt · TEAM Conjet</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="#applikationer">Applikationer →</a>
+          <a class="btn btn-outline" href="#produkter">Produkter →</a>
+          <button type="button" class="btn btn-outline" data-login>TEAM Conjet →</button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-site.jpg" alt="Placeholder: hydrodemolition på plats">
+      </div>
+    </section>
 
     <div class="search" role="search">
       <span class="search-icon" aria-hidden="true">⌕</span>
-      <input type="search" placeholder="Här: sökfält — FAQ, applikationer, produkter, forskning…" readonly>
+      <input type="search" placeholder="Här: sök FAQ, applikationer, produkter, forskning…" readonly>
     </div>
 
-    <div class="panel" style="margin-bottom:0.65rem">
-      <span class="placeholder-label">[[ Intro / hero-zon ]]</span>
-      <h2 style="text-transform:none;font-size:1rem;margin-bottom:0.25rem">Här kan det finnas en kort ingress om vad Hydrodemolition är och varför kunskap skapar trygghet.</h2>
-      <p class="hint">Funktioner: CTA till applikationsbank · produktöversikt · “Bli en del av TEAM Conjet” (signup/inkastare).</p>
-      <div class="row" style="margin-top:0.5rem">
-        <a class="btn btn-accent" href="#applikationer">Till applikationer →</a>
-        <a class="btn" href="#produkter">Till produkter →</a>
-        <button type="button" class="btn" data-login>Bli TEAM Conjet (demo-login) →</button>
-      </div>
-    </div>
-
-    <h2 style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;margin:0.85rem 0 0.4rem;color:var(--muted)">Kunskapsytor i den öppna delen</h2>
+    <h2 class="section-label">Kunskapsytor</h2>
 
     <div class="grid grid-4" id="produkter">
       <a class="tile" href="#produkter">
-        <div class="tile-media">[bild: produkt]</div>
-        <div class="tile-title">Produkter &amp; data</div>
-        <div class="tile-desc">Här: specifikationslistor för samtliga modeller + länk till produktionsdata / app.</div>
-        <span class="tile-link">Öppna produktöversikt →</span>
+        <div class="tile-media"><img src="images/product-range.png" alt=""></div>
+        <div class="tile-body">
+          <div class="tile-title">Produkter &amp; data</div>
+          <div class="tile-desc">Här: specifikationslistor för samtliga modeller + länk till produktionsdata / app.</div>
+          <span class="tile-link">Produktöversikt →</span>
+        </div>
       </a>
       <a class="tile" href="#applikationer" id="applikationer">
-        <div class="tile-media">[bild: applikation]</div>
-        <div class="tile-title">Applikationsbank</div>
-        <div class="tile-desc">Här: hur maskiner appliceras för olika arbetsuppgifter och ändamål.</div>
-        <span class="tile-link">Hitta applikation →</span>
+        <div class="tile-media"><img src="images/versatility.webp" alt=""></div>
+        <div class="tile-body">
+          <div class="tile-title">Applikationsbank</div>
+          <div class="tile-desc">Här: hur maskiner appliceras för olika arbetsuppgifter och ändamål.</div>
+          <span class="tile-link">Hitta applikation →</span>
+        </div>
       </a>
       <a class="tile" href="#hallbarhet">
-        <div class="tile-media">[bild: SDG]</div>
-        <div class="tile-title">Hållbarhet &amp; forskning</div>
-        <div class="tile-desc">Här: SDG-jämförelse vs bilning, white papers, exjobb (3:e part), event/nyheter.</div>
-        <span class="tile-link">Läs underlag →</span>
+        <div class="tile-media"><img src="images/dam.jpg" alt=""></div>
+        <div class="tile-body">
+          <div class="tile-title">Hållbarhet &amp; forskning</div>
+          <div class="tile-desc">Här: SDG-jämförelse vs bilning, white papers, exjobb (3:e part), event/nyheter.</div>
+          <span class="tile-link">Läs underlag →</span>
+        </div>
       </a>
       <a class="tile" href="#film">
-        <div class="tile-media">[▶ film]</div>
-        <div class="tile-title">Filmer / Youtube</div>
-        <div class="tile-desc">Här: filmade exempel på vattenbilningsjobb och koppling till Youtube-kanal.</div>
-        <span class="tile-link">Se exempel →</span>
+        <div class="tile-media">
+          <img src="images/video-thumb.png" alt="">
+          <span class="play" aria-hidden="true">▶</span>
+        </div>
+        <div class="tile-body">
+          <div class="tile-title">Filmer / Youtube</div>
+          <div class="tile-desc">Här: filmade exempel på vattenbilningsjobb och koppling till Youtube-kanal.</div>
+          <span class="tile-link">Se exempel →</span>
+        </div>
       </a>
     </div>
 
     <div class="grid grid-2" style="margin-top:0.55rem">
       <div class="panel" id="hallbarhet">
-        <span class="placeholder-label">[[ Modul: 3D + konfigurator ]]</span>
+        <span class="placeholder-label">[[ 3D + konfigurator ]]</span>
         <h2>Roterande 3D-modeller &amp; tillvalsguide</h2>
-        <p class="hint">Här kan det finnas interaktiva modeller, tillvalsmoduler och en konfigurationsguide / konfigurator. (Ej implementerad i underlaget — visar plats i IA.)</p>
-        <div class="tile-media" style="height:6rem;margin-top:0.45rem">[3D-vy · placeholder]</div>
+        <p class="hint">Här: interaktiva modeller, tillvalsmoduler och konfigurationsguide / konfigurator.</p>
+        <div class="media-block">
+          <img src="images/hero-robots.webp" alt="">
+        </div>
         <div class="row" style="margin-top:0.45rem">
-          <span class="btn btn-sm">Öppna konfigurator (placeholder)</span>
+          <span class="btn btn-sm btn-accent">Öppna konfigurator</span>
         </div>
       </div>
       <div class="panel" id="film">
-        <span class="placeholder-label">[[ Modul: FAQ + AI-manual ]]</span>
+        <span class="placeholder-label">[[ FAQ + AI-manual ]]</span>
         <h2>FAQ &amp; vägledning</h2>
-        <p class="hint">Här: vanliga frågor. Separat ingång: “Manual → Conjet AI” som söker i godkända kunskapsunderlag.</p>
+        <p class="hint">Här: vanliga frågor. Ingång till Conjet AI mot godkända manualer.</p>
         <div class="stack" style="margin-top:0.5rem">
-          <div class="list-row"><span class="tag">FAQ</span><span>Här: fråga om metodval / upphandling</span><span>→</span></div>
-          <div class="list-row"><span class="tag">FAQ</span><span>Här: fråga om produktjämförelse</span><span>→</span></div>
+          <div class="list-row"><span class="tag">FAQ</span><span>Här: metodval / upphandling</span><span>→</span></div>
+          <div class="list-row"><span class="tag">FAQ</span><span>Här: produktjämförelse</span><span>→</span></div>
           <div class="list-row"><span class="tag">AI</span><span>Här: fråga Conjet AI i manualer</span><span>→</span></div>
         </div>
       </div>
     </div>
 
     <div class="panel" style="margin-top:0.55rem">
-      <span class="placeholder-label">[[ Modul: forskning / event / policy ]]</span>
+      <span class="placeholder-label">[[ Forskning / event / policy ]]</span>
       <h2>Forskning, white papers &amp; event</h2>
-      <p class="hint">Här kan det finnas 3:e parts material, mässor (t.ex. “Conjet i Frankfurt…”), föredrag och underlag riktat mot policy/upphandling. EU-lagstiftning markeras som <em>behöver preciseras</em>.</p>
+      <p class="hint">Här: 3:e parts material, mässor, föredrag och underlag för policy/upphandling.</p>
       <div class="row" style="margin-top:0.45rem">
-        <span class="chip">White paper (placeholder)</span>
-        <span class="chip">Event / news (placeholder)</span>
-        <span class="chip">Policy / upphandling — öppet</span>
+        <span class="chip">White paper</span>
+        <span class="chip">Event / news</span>
+        <span class="chip">Policy / upphandling</span>
       </div>
     </div>
 
@@ -150,15 +156,15 @@
     </div>
   </main>
 
-  <p class="footer-note">HYDRO Academy · blueprint v0 · Del 1/5 öppen · Fake login via localStorage</p>
+  <p class="footer-note">HYDRO Academy · konceptprototyp · bilder: conjet.com</p>
 
   <div class="modal-backdrop" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
     <div class="modal">
-      <span class="placeholder-label">[[ Fake inloggning — ingen riktig auth ]]</span>
-      <h2 id="login-title">Logga in (demo)</h2>
-      <p class="hint">Simulerar “Bli en del av TEAM Conjet”. Låser upp Lär &amp; använd, Sales Academy och Community.</p>
+      <span class="placeholder-label">[[ Demo-inloggning ]]</span>
+      <h2 id="login-title">Logga in</h2>
+      <p class="hint">Simulerar TEAM Conjet. Låser upp stängda delar.</p>
       <form id="login-form">
-        <label for="login-name">Visningsnamn i prototypen</label>
+        <label for="login-name">Visningsnamn</label>
         <input id="login-name" type="text" placeholder="t.ex. Distributör Nord" autocomplete="off">
         <div class="actions">
           <button type="button" class="btn" data-close-modal>Avbryt</button>

@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community — HYDRO Academy (konceptunderlag)</title>
+  <title>Community — HYDRO Academy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="blueprint-banner">
-    <strong>Konceptunderlag · designsprint</strong>
-    <span>Inte en färdig tjänst — visar funktioner och struktur för vidare utveckling.</span>
+    <strong>Konceptprototyp</strong>
+    Placeholder-innehåll · bilder från conjet.com
   </div>
 
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="brand">
-        <span class="brand-mark">Conjet</span>
-        <span class="brand-sep">|</span>
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Conjet">
+        <span class="brand-sep" aria-hidden="true"></span>
         <span class="brand-sub">Hydro Academy</span>
-      </div>
+      </a>
       <nav class="nav" aria-label="Huvuddelar">
         <a href="index.html">Upptäck</a>
         <a href="lar.html">Lär &amp; använd <span class="lock" aria-hidden="true">🔒</span></a>
@@ -30,13 +30,13 @@
         <a href="praktiken.html">I praktiken</a>
       </nav>
       <div class="top-actions">
-        <select class="lang" aria-label="Språk (placeholder)">
+        <select class="lang" aria-label="Språk">
           <option>Svenska</option>
           <option>English</option>
         </select>
         <span class="auth-state" data-auth-label>Ej inloggad</span>
-        <button type="button" class="btn btn-accent btn-login" data-login>Logga in (demo)</button>
-        <button type="button" class="btn btn-account" disabled>Mitt konto</button>
+        <button type="button" class="btn btn-accent btn-login" data-login>Logga in</button>
+        <button type="button" class="btn btn-accent btn-account" disabled>Mitt konto</button>
         <button type="button" class="btn btn-ghost btn-logout" data-logout>Logga ut</button>
       </div>
     </div>
@@ -44,22 +44,15 @@
 
   <main class="page">
     <div class="page-head">
-      <h1>4. Conjet Community</h1>
-      <p>Stängd del — forum, experter, ambassadörer, certifikat</p>
-    </div>
-
-    <div class="meta-row">
-      <span class="chip chip-locked">Tillgång: inloggad</span>
-      <span class="chip">Mål: erfarenhetsutbyte + gemensam kunskapsbas</span>
-      <span class="chip">Forum · Discord/Reddit-känsla (avskalat)</span>
+      <h1>Conjet Community</h1>
     </div>
 
     <div class="gated">
       <div class="gate-note">
         <div class="gate-card">
           <span class="placeholder-label">[[ Gate ]]</span>
-          <p>Community kräver inloggning. Demo-login låser upp den här vyn.</p>
-          <button type="button" class="btn btn-accent" data-login>Öppna demo-inloggning →</button>
+          <p>Logga in för att se Community.</p>
+          <button type="button" class="btn btn-accent" data-login>Logga in →</button>
         </div>
       </div>
 
@@ -101,32 +94,35 @@
           <div class="panel panel-dark">
             <span class="placeholder-label">[[ Ask the experts ]]</span>
             <h3>Ask the experts</h3>
-            <p class="hint">Här: tekniska frågor, säljstöd, hitta lokal partner.</p>
-            <div class="stack" style="margin-top:0.4rem">
-              <span class="btn btn-sm">Tekniska frågor →</span>
-              <span class="btn btn-sm">Säljstöd →</span>
-              <span class="btn btn-sm">Hitta lokal partner →</span>
+            <div class="media-block" style="height:6rem">
+              <img src="images/operator.webp" alt="">
             </div>
-            <button type="button" class="btn btn-accent" style="margin-top:0.55rem;width:100%">Ställ en fråga →</button>
+            <div class="stack" style="margin-top:0.4rem">
+              <span class="btn btn-sm btn-accent">Tekniska frågor →</span>
+              <span class="btn btn-sm btn-ghost">Säljstöd →</span>
+              <span class="btn btn-sm btn-ghost">Hitta lokal partner →</span>
+            </div>
           </div>
           <div class="panel">
-            <span class="placeholder-label">[[ Ambassadörer / utbyte ]]</span>
+            <span class="placeholder-label">[[ Ambassadörer ]]</span>
             <h3>Ambassadörer &amp; utbyten</h3>
-            <p class="hint">Här: startups, först-i-landet, internationella utbyten mellan marknader och HQ.</p>
+            <div class="media-block" style="height:5rem">
+              <img src="images/team.jpg" alt="">
+            </div>
             <div class="row" style="margin-top:0.4rem">
-              <span class="btn btn-sm">Möt ambassadörer →</span>
-              <span class="btn btn-sm">Utforska utbyten →</span>
+              <span class="btn btn-sm btn-accent">Ambassadörer →</span>
+              <span class="btn btn-sm">Utbyten →</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="panel" style="margin-top:0.55rem">
-        <span class="placeholder-label">[[ Training record / certifikat ]]</span>
+        <span class="placeholder-label">[[ Training record ]]</span>
         <h2>Your training record</h2>
         <div class="row">
-          <p class="hint" style="flex:1;margin:0">Här: genomförda kurser, bedömningar och eventuella körkort/licenser. Utfärdare och omfattning behöver preciseras.</p>
-          <button type="button" class="btn btn-sm">Visa certifikat →</button>
+          <p class="hint" style="flex:1;margin:0">Här: genomförda kurser, bedömningar och körkort/licenser.</p>
+          <button type="button" class="btn btn-sm btn-accent">Visa certifikat →</button>
         </div>
       </div>
     </div>
@@ -139,15 +135,15 @@
     </div>
   </main>
 
-  <p class="footer-note">HYDRO Academy · blueprint v0 · Del 4/5 stängd · Fake login via localStorage</p>
+  <p class="footer-note">HYDRO Academy · konceptprototyp · bilder: conjet.com</p>
 
   <div class="modal-backdrop" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
     <div class="modal">
-      <span class="placeholder-label">[[ Fake inloggning — ingen riktig auth ]]</span>
-      <h2 id="login-title">Logga in (demo)</h2>
+      <span class="placeholder-label">[[ Demo-inloggning ]]</span>
+      <h2 id="login-title">Logga in</h2>
       <p class="hint">Simulerar access till Community.</p>
       <form id="login-form">
-        <label for="login-name">Visningsnamn i prototypen</label>
+        <label for="login-name">Visningsnamn</label>
         <input id="login-name" type="text" placeholder="t.ex. Partner / Operatör" autocomplete="off">
         <div class="actions">
           <button type="button" class="btn" data-close-modal>Avbryt</button>
